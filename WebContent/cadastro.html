@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Caramelo</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/style.css">
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="black">
+
+    <!-- {{-- navbar --}} -->
+    <nav class="nav-wrapper black">
+
+        <a href="index.html" class="brand-logo">
+            <i class="large material-icons"><img src="src/img/sugar.png" alt="Galeria de fotos"></i>Caramelo!
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+
+        <form class="right hide-on-med-and-down" style="height: 56px">
+            <div class="" style="height: 40px; margin-top: auto;">
+
+                <input id="search" type="search" placeholder="Pesquise aqui" required>
+
+            </div>
+        </form>
+    </nav>
+
+    <div class="main">
+
+        <div class="container marg">
+
+            <form action="cadastra.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="white-text" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="white-text" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" class="white-text" maxlength="13" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" class="white-text" maxlength="11" required>
+
+                <label for="senha">SENHA:</label>
+                <input type="password" name="senha" id="senha" class="white-text" maxlength="255" required>
+
+                <button type="submit" name="cadastrar"
+                    class="btn  yellow darken-3 black-text waves-effect waves-red">Cadastrar</button>
+
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Caramelo</h5>
+                    <p class="white-text text-lighten-4">Compartilhe suas receitas!.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Copyright Caramelo
+                <a class="white-text text-lighten-4 right modal-trigger" href="#git">Colaboradores</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="ssgit" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+    </div>
+
+    <div id="git" class="modal bottom-sheet" style="z-index: 1007;">
+        <div class="modal-content">
+            <h4>Colaboradores</h4>
+            <ul class="collection">
+
+                <li class="collection-item avatar">
+                    <img src="src/img/github.png" alt="Github" class="circle">
+                    <span class="title">Alan Nonato</span>
+                    <p>Github: <a href="https://github.com/AlanNonat0">https://github.com/AlanNonat0</a></p>
+                </li>
+
+                <li class="collection-item avatar">
+                    <img src="src/img/github.png" alt="Github" class="circle">
+                    <span class="title">Ruth Danielle</span>
+                    <p>Github: <a href="https://github.com/ruthdanielle">https://github.com/ruthdanielle</a></p>
+                </li>
+
+                <li class="collection-item avatar">
+                    <img src="src/img/github.png" alt="Github" class="circle">
+                    <span class="title">Julio Cesar Gois</span>
+                    <p>Github: <a href="https://github.com/jucesargois">https://github.com/jucesargois</a></p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="materialize/js/jquery-3.5.1.min.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="materialize/js/initialization.js"></script>
+
+</body>
+
+</html>
