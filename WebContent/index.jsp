@@ -1,62 +1,29 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home | Caramelo</title>
-    <link rel="stylesheet" href="materialize/css/materialize.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="materialize/css/style.css">
-    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
-
-</head>
-
-<body class="black">
-
-    <!--  navbar -->
-    <nav class="nav-wrapper black">
-
-        <a href="index.html" class="brand-logo valign-wrapper">
-            <i class="large material-icons"><img src="src/img/sugar.png" height="45px"
-                    alt="Galeria de fotos"></i>Caramelo!
-        </a>
-
-        <ul class="right hide-on-med-and-down">
-            <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-
-        <form class="right hide-on-med-and-down">
-            <input id="search" type="search" placeholder="Pesquise aqui" required>
-        </form>
-
-        <ul class="right hide-on-med-and-up">
-            <li><a href="cadastro.html">Cadastro</a></li>
-        </ul>
-    </nav>
+<!-- Header -->
+<jsp:include page="app/components/header.jsp"></jsp:include>
 
     <!--  Slider -->
     <div class="slider">
         <ul class="slides hoverable">
 
             <li>
-                <img src="src/img/bolo.jpg"> <!-- random image -->
+                <img src="app/resources/img/bolo.jpg"> <!-- random image -->
                 <div class="caption center-align">
                     <h3 class=" center-aling">Bem vindo ao Caramelo!</h3>
                     <h5 class="light grey-text text-lighten-3">A melhor experiencia!</h5>
                 </div>
             </li>
             <li>
-                <img src="src/img/pizza.jpg"> <!-- random image -->
+                <img src="app/resources/img/pizza.jpg"> <!-- random image -->
                 <div class="caption left-align">
                     <h3 class="light grey-text text-lighten-3">Guarde suas receitas</h3>
                     <h5 class="light grey-text text-lighten-3">maior segurança com suas lembranças</h5>
                 </div>
             </li>
             <li>
-                <img src="src/img/torta.jpg"> <!-- random image -->
+                <img src="app/resources/img/torta.jpg"> <!-- random image -->
                 <div class="caption right-align">
                     <h3>Compartilhe experiencias</h3>
                     <h5 class="light grey-text text-lighten-3">Torne suas habilidades famosas</h5>
@@ -64,7 +31,7 @@
             </li>
 
             <li>
-                <img src="src/img/strogonoff.jpg"> <!-- random image -->
+                <img src="app/resources/img/strogonoff.jpg"> <!-- random image -->
                 <div class="caption center-align">
                     <h2>Divirta-se!</h2>
                     <h5 class="light grey-text text-lighten-3">sem moderação</h5>
@@ -110,7 +77,7 @@
 
                 <div class="card borda">
                     <div class="card-image waves-effect waves-block waves-light break borda height-card-img">
-                        <img class="activator img-receita" src="src/img/bolo.jpg">
+                        <img class="activator img-receita" src="app/resources/img/bolo.jpg">
                     </div>
                     <div class="card-content height-card-product">
                         <span class="card-title activator grey-text text-darken-4 text-hide"><i
@@ -134,7 +101,7 @@
             <div class="col s12 m6 l3">
                 <div class="card borda">
                     <div class="card-image waves-effect waves-block waves-light borda  height-card-img">
-                        <img class="activator img-receita" src="src/img/pizza.jpg">
+                        <img class="activator img-receita" src="app/resources/img/pizza.jpg">
                     </div>
                     <div class="card-content height-card-product">
                         <span class="card-title activator grey-text text-darken-4 text-hide"><i
@@ -156,7 +123,7 @@
 
                 <div class="card borda">
                     <div class="card-image waves-effect waves-block waves-light borda height-card-img">
-                        <img class="activator img-receita" src="src/img/torta.jpg">
+                        <img class="activator img-receita" src="app/resources/img/torta.jpg">
                     </div>
                     <div class="card-content height-card-product">
                         <span class="card-title activator grey-text text-darken-4 text-hide"><i
@@ -177,7 +144,7 @@
             <div class="col s12 m6 l3">
                 <div class="card borda">
                     <div class="card-image waves-effect waves-block waves-light borda height-card-img">
-                        <img class="activator img-receita" src="src/img/strogonoff.jpg">
+                        <img class="activator img-receita" src="app/resources/img/strogonoff.jpg">
                     </div>
                     <div class="card-content height-card-product">
                         <span class="card-title activator grey-text text-darken-4 text-hide"><i
@@ -198,7 +165,7 @@
             <div class="col s12 m6 l3">
                 <div class="card borda">
                     <div class="card-image waves-effect waves-block waves-light borda height-card-img">
-                        <img class="activator img-receita" src="src/img/cafe.jpg">
+                        <img class="activator img-receita" src="app/resources/img/cafe.jpg">
                     </div>
                     <div class="card-content height-card-product">
                         <span class="card-title activator grey-text text-darken-4 text-hide"><i
@@ -216,7 +183,7 @@
             <div class="col s12 m6 l3">
                 <div class="card borda">
                     <div class="card-image waves-effect waves-block waves-light borda">
-                        <img class="activator img-receita" src="src/img/carbonara.jpg">
+                        <img class="activator img-receita" src="app/resources/img/carbonara.jpg">
                     </div>
                     <div class="card-content height-card-product">
                         <span class="card-title activator grey-text text-darken-4 text-hide"><i
@@ -234,7 +201,7 @@
             <div class="col s12 m6 l3">
                 <div class="card borda">
                     <div class="card-image waves-effect waves-block waves-light borda height-card-img">
-                        <img class="activator img-receita" src="src/img/arroz.jpg">
+                        <img class="activator img-receita" src="app/resources/img/arroz.jpg">
                     </div>
                     <div class="card-content height-card-product">
                         <span class="card-title activator grey-text text-darken-4 text-hide"><i
@@ -252,7 +219,7 @@
             <div class="col s12 m6 l3">
                 <div class="card borda">
                     <div class="card-image waves-effect waves-block waves-light borda height-card-img">
-                        <img class="activator img-receita" src="src/img/hamburguer.jpg">
+                        <img class="activator img-receita" src="app/resources/img/hamburguer.jpg">
                     </div>
                     <div class="card-content height-card-product">
                         <span class="card-title activator grey-text text-darken-4 text-hide"><i
@@ -272,7 +239,7 @@
     </div>
     <!--  paralax effect -->
     <div class="parallax-container" style="height: 400px">
-        <div class="parallax"><img src="src/img/cafe.jpg"></div>
+        <div class="parallax"><img src="app/resources/img/cafe.jpg"></div>
     </div>
 
     <div class="section white">
@@ -294,7 +261,7 @@
 
             <div class="col m6 l6 hide-on-med-and-down">
 
-                <img src="src/img/caderno-receitas.jpg" class="borda" alt="Caderno de receitas" width="100%" height="400px">
+                <img src="app/resources/img/caderno-receitas.jpg" class="borda" alt="Caderno de receitas" width="100%" height="400px">
 
             </div>
         </div>
@@ -313,68 +280,19 @@
             <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
         </ul>
     </div>
-
-    <!-- footer -->
-
-    <footer class="page-footer grey darken-4">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Caramelo</h5>
-                    <p class="white-text text-lighten-4">Compartilhe suas receitas!.</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2021 Copyright Caramelo
-                <a class="white-text text-lighten-4 right modal-trigger" href="#git">Colaboradores</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modal Structure -->
-    <div id="ssgit" class="modal">
-        <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
-        </div>
+    
+    <div class="row">
+    	
+    	<div class="col s12 m6 l6">
+    	<h3 class="white-text center">Cadastre-se</h3>
+    	<jsp:include page="app/components/form_register.jsp"></jsp:include>
+    	</div>
+    	<div class="col s12 m6 l6">
+    	<h3 class="white-text center">Entre</h3>
+    	<jsp:include page="app/components/form_login.jsp"></jsp:include>
+    	</div>
     </div>
-
-    <div id="git" class="modal bottom-sheet" style="z-index: 1007;">
-        <div class="modal-content">
-            <h4>Colaboradores</h4>
-            <ul class="collection">
-
-                <li class="collection-item avatar">
-                    <img src="src/img/github.png" alt="Github" class="circle">
-                    <span class="title">Alan Nonato</span>
-                    <p>Github: <a href="https://github.com/AlanNonat0">https://github.com/AlanNonat0</a></p>
-                </li>
-
-                <li class="collection-item avatar">
-                    <img src="src/img/github.png" alt="Github" class="circle">
-                    <span class="title">Ruth Danielle</span>
-                    <p>Github: <a href="https://github.com/ruthdanielle">https://github.com/ruthdanielle</a></p>
-                </li>
-
-                <li class="collection-item avatar">
-                    <img src="src/img/github.png" alt="Github" class="circle">
-                    <span class="title">Julio Cesar Gois</span>
-                    <p>Github: <a href="https://github.com/jucesargois">https://github.com/jucesargois</a></p>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-
-    <!-- JAVASCRIPT -->
-    <script src="materialize/js/jquery-3.5.1.min.js"></script>
-    <script src="materialize/js/materialize.js"></script>
-    <script src="materialize/js/initialization.js"></script>
-
-</body>
-
-</html>
+    
+    
+    <!-- Footer -->>
+    <jsp:include page="app/components/footer.jsp"></jsp:include>
