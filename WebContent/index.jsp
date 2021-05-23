@@ -3,296 +3,192 @@
 
 <!-- Header -->
 <jsp:include page="app/components/header.jsp"></jsp:include>
+<div class="container-fluid">
+    <div id="carouselReceitas" class="carousel slide" data-bs-ride="carousel">
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="#carouselReceitas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	    <button type="button" data-bs-target="#carouselReceitas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	    <button type="button" data-bs-target="#carouselReceitas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  </div>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <div style="min-width: 100%; height: 400px; background-image: url(app/resources/img/bolo.jpg); background-size: cover; background-position:left"> </div>
+	    	 <div class="carousel-caption d-none d-md-block">
+		        <h2 class="text-end font-weight-bold">Bem-vindo ao Sabores</h2>
+		        <p class="text-end">As melhores receitas. A melhor experiência </p>
+		      </div>
+	    </div>
+	    <div class="carousel-item">
+	      <div style="min-width: 100%; height: 400px; background-image: url(app/resources/img/receita-.jpg); background-size: cover; background-position:left"> </div>
+	    	<div class="carousel-caption ">
+		        <h2 class="text-start font-weight-bold">Guarde suas receitas</h2>
+		        <p class="text-start">Acesse suas receitas favoritas a qualquer momento</p>
+		      </div>
+	    </div>
+	    
+	    <div class="carousel-item">
+	      <div style="min-width: 100%; height: 400px; background-image: url(app/resources/img/macarrao.jpg); background-size: cover; background-position:left"> </div>
+	    	<div class="carousel-caption ">
+		        <h2 class="text-end font-weight-bold">Compartilhe experiências</h2>
+		        <p class="text-end">Publique e compartilhe suas receitas favoritas</p>
+		      </div>
+	    </div>
+	    
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselReceitas" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Anterior</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselReceitas" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Próximo</span>
+	  </button>
+	</div>
+	
+	
+	<div class="row d-flex justify-content-center mt-4">
+		<div class=" col-lg-6 col-12 col-sm-12 col-xl-6">
+			<h4 class="text-white text-center">Encontre aqui as receitas mais saborosas</h4>
+			<form>
+				<input type="text" class="form-control mx-auto" placeholder="Digite aqui sua busca" />
+			</form>
+		</div>
+	</div>
+	
+	<div class="row mt-4">
+		<div class="col-lg-3 col-sm-6 pb-2">
+			<div class="card border border-dark" style="height: 367.84px !important;">
+			  <img src="app/resources/img/bolo.jpg" class="card-img-top" alt="Bolo trufado" style="min-height: 206.84px !important">
+			  <div class="card-body">
+			    <h5 class="card-title">Bolo Trufado</h5>
+			    <p class="card-text">Bolo delicioso de chocolate trufado decorado com cerejas.</p>
+			    <div class="d-flex justify-content-end">
+			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    </div>
+			    
+			  </div>
+			</div>			
+		</div>
+		
+		<div class="col-lg-3 col-sm-6 pb-2">
+			<div class="card border border-dark" style="height: 367.84px !important;">
+			  <img src="app/resources/img/pizza.jpg" class="card-img-top" alt="Pizza" style="min-height: 206.84px !important">
+			  <div class="card-body">
+			    <h5 class="card-title">Pizza</h5>
+			    <p class="card-text">Que tal surpreender com uma pizza caseira e cheia de sabor?!</p>
+			    <div class="d-flex justify-content-end">
+			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    </div>
+			    
+			  </div>
+			</div>
+			
+			
+		</div>
+		
+		<div class="col-lg-3 col-sm-6 pb-2">
+			<div class="card border border-dark" style="height: 367.84px !important;">
+			  <img src="app/resources/img/sopa.jpg" class="card-img-top" alt="Sopa de Lentilha" style="min-height: 206.84px !important">
+			  <div class="card-body">
+			    <h5 class="card-title">Sopa de Lentilha</h5>
+			    <p class="card-text">Sopa de lentilha repleta de temperos e sabores diferenciados.</p>
+			    <div class="d-flex justify-content-end">
+			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    </div>
+			    
+			  </div>
+			</div>
+			
+			
+		</div>
+		
+		<div class="col-lg-3 col-sm-6 pb-2">
+			<div class="card border border-dark" style="height: 367.84px !important;">
+			  <img src="app/resources/img/milkshake.jpg" class="card-img-top" alt="MIlkshake" style="min-height: 206.84px !important">
+			  <div class="card-body">
+			    <h5 class="card-title">Milkshake de Morango</h5>
+			    <p class="card-text">Colorido e delicioso. Perfeito para as crianças.</p>
+			    <div class="d-flex justify-content-end">
+			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    </div>
+			    
+			  </div>
+			</div>
+			
+			
+		</div>
+		
+		<div class="col-lg-3 col-sm-6 pb-2">
+			<div class="card border border-dark" style="height: 367.84px !important;">
+			  <img src="app/resources/img/arroz.jpg" class="card-img-top" alt="Arroz" style="min-height: 206.84px !important">
+			  <div class="card-body">
+			    <h5 class="card-title">Arroz Soltinho</h5>
+			    <p class="card-text">Receita infálivel para que seu arroz sempre fique bem soltinho.</p>
+			    <div class="d-flex justify-content-end">
+			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    </div>
+			    
+			  </div>
+			</div>
+		</div>
+		
+		<div class="col-lg-3 col-sm-6 pb-2">
+			<div class="card border border-dark" style="height: 367.84px !important;">
+			  <img src="app/resources/img/hamburguer.jpg" class="card-img-top" alt="Hambúrguer Artesanal" style="min-height: 206.84px !important">
+			  <div class="card-body">
+			    <h5 class="card-title">Hambúrguer Artesanal</h5>
+			    <p class="card-text">Receita clássica capaz de conquistar todos os paladares.</p>
+			    <div class="d-flex justify-content-end">
+			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    </div>
+			    
+			  </div>
+			</div>
+		</div>
+		
+		<div class="col-lg-3 col-sm-6 pb-2">
+			<div class="card border border-dark" style="height: 367.84px !important;">
+			  <img src="app/resources/img/torta.jpg" class="card-img-top" alt="Torta de Maçã" style="min-height: 206.84px !important">
+			  <div class="card-body">
+			    <h5 class="card-title">Torta de Maçã</h5>
+			    <p class="card-text">Receita queridinha. Ideal para dias mais frios.</p>
+			    <div class="d-flex justify-content-end">
+			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    </div>
+			    
+			  </div>
+			</div>
+		</div>
+		
+		<div class="col-lg-3 col-sm-6 pb-2">
+			<div class="card border border-dark" style="height: 367.84px !important;">
+			  <img src="app/resources/img/cafe.jpg" class="card-img-top" alt="Café" style="min-height: 206.84px !important">
+			  <div class="card-body">
+			    <h5 class="card-title">Café Colombiano</h5>
+			    <p class="card-text">Café diferenciado de sabor intenso.</p>
+			    <div class="d-flex justify-content-end">
+			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    </div>
+			    
+			  </div>
+			</div>
+		</div>
+	</div>
+	
+	 <div class="mt-4" style="min-width: 100%; height: 200px; background-image: url(app/resources/img/tempero-2.jpg); background-size: cover; background-position:left"> 
+	 </div>
 
-    <!--  Slider -->
-    <div class="slider">
-        <ul class="slides hoverable">
-
-            <li>
-                <img src="app/resources/img/bolo.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                    <h3 class=" center-aling">Bem vindo ao Caramelo!</h3>
-                    <h5 class="light grey-text text-lighten-3">A melhor experiencia!</h5>
-                </div>
-            </li>
-            <li>
-                <img src="app/resources/img/pizza.jpg"> <!-- random image -->
-                <div class="caption left-align">
-                    <h3 class="light grey-text text-lighten-3">Guarde suas receitas</h3>
-                    <h5 class="light grey-text text-lighten-3">maior segurança com suas lembranças</h5>
-                </div>
-            </li>
-            <li>
-                <img src="app/resources/img/torta.jpg"> <!-- random image -->
-                <div class="caption right-align">
-                    <h3>Compartilhe experiencias</h3>
-                    <h5 class="light grey-text text-lighten-3">Torne suas habilidades famosas</h5>
-                </div>
-            </li>
-
-            <li>
-                <img src="app/resources/img/strogonoff.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                    <h2>Divirta-se!</h2>
-                    <h5 class="light grey-text text-lighten-3">sem moderação</h5>
-                </div>
-            </li>
-
-        </ul>
-
-    </div>
+			<h3 class="text-white text-center mt-3">Guia geral de como usar e combinar os mais variados temperos</h3>
+			<div class="d-flex justify-content-center">
+				<button type="button" class="btn btn-light mb-3 btn-block d-flex justify-content-center">Confira</button>
+				
+			</div>
+			
+</div>
+  
+		
+	
+	<!-- Header -->
+<jsp:include page="app/components/footer.jsp"></jsp:include>
 
 
-    <!--  text  -->
-    <div class="section black">
-        <div class="row container">
-
-            <h1 class="white-text text-darken-3 lighten-3 center">Encontre as melhores receitas receitas</h1>
-
-            <!-- Barra busca meio -->
-            <form method="GET">
-                <div class="row valign-wrapper">
-
-                    <div class="input-field col s12">
-                        <input class="col s12" id="search-mid" type="search" placeholder="Digite aqui sua busca"
-                            required>
-                        <i class="material-icons marg-close">close</i>
-                    </div>
-                    <div class="col s1"><label class="label-icon" for="search-mid"><i
-                                class="material-icons">search</i></label></div>
-                </div>
-
-            </form>
-
-
-        </div>
-    </div>
-
-    <!-- receitas -->
-
-    <div class="section">
-        <div class="row">
-
-            <div class="col s12 m6 l3">
-
-                <div class="card borda">
-                    <div class="card-image waves-effect waves-block waves-light break borda height-card-img">
-                        <img class="activator img-receita" src="app/resources/img/bolo.jpg">
-                    </div>
-                    <div class="card-content height-card-product">
-                        <span class="card-title activator grey-text text-darken-4 text-hide"><i
-                                class="material-icons right">more_vert</i>Bolo de chocolate</span>
-                        <p><a href="#">Confira</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card
-                            Title</span>
-                        <p class="">Here is some more information about this product that is only revealed once clicked
-                            on.</p>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-
-
-            <div class="col s12 m6 l3">
-                <div class="card borda">
-                    <div class="card-image waves-effect waves-block waves-light borda  height-card-img">
-                        <img class="activator img-receita" src="app/resources/img/pizza.jpg">
-                    </div>
-                    <div class="card-content height-card-product">
-                        <span class="card-title activator grey-text text-darken-4 text-hide"><i
-                                class="material-icons right">more_vert</i>Pizza 4 queijos</span>
-                        <p><a href="#">Confira</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card
-                            Title</span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="col s12 m6 l3">
-
-                <div class="card borda">
-                    <div class="card-image waves-effect waves-block waves-light borda height-card-img">
-                        <img class="activator img-receita" src="app/resources/img/torta.jpg">
-                    </div>
-                    <div class="card-content height-card-product">
-                        <span class="card-title activator grey-text text-darken-4 text-hide"><i
-                                class="material-icons right">more_vert</i>Torta de maçã deliciosa!</span>
-                        <p><a href="#">Confira</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card
-                            Title</span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="col s12 m6 l3">
-                <div class="card borda">
-                    <div class="card-image waves-effect waves-block waves-light borda height-card-img">
-                        <img class="activator img-receita" src="app/resources/img/strogonoff.jpg">
-                    </div>
-                    <div class="card-content height-card-product">
-                        <span class="card-title activator grey-text text-darken-4 text-hide"><i
-                                class="material-icons right">more_vert</i>Strogonoff Supreme</span>
-                        <p><a href="#">Confira</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card
-                            Title</span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="col s12 m6 l3">
-                <div class="card borda">
-                    <div class="card-image waves-effect waves-block waves-light borda height-card-img">
-                        <img class="activator img-receita" src="app/resources/img/cafe.jpg">
-                    </div>
-                    <div class="card-content height-card-product">
-                        <span class="card-title activator grey-text text-darken-4 text-hide"><i
-                                class="material-icons right">more_vert</i>Café colombiano</span>
-                        <p><a href="#">Confira</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card
-                            Title</span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card borda">
-                    <div class="card-image waves-effect waves-block waves-light borda">
-                        <img class="activator img-receita" src="app/resources/img/carbonara.jpg">
-                    </div>
-                    <div class="card-content height-card-product">
-                        <span class="card-title activator grey-text text-darken-4 text-hide"><i
-                                class="material-icons right">more_vert</i>Macarrão a Carbonara</span>
-                        <p><a href="#">Confira</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card
-                            Title</span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card borda">
-                    <div class="card-image waves-effect waves-block waves-light borda height-card-img">
-                        <img class="activator img-receita" src="app/resources/img/arroz.jpg">
-                    </div>
-                    <div class="card-content height-card-product">
-                        <span class="card-title activator grey-text text-darken-4 text-hide"><i
-                                class="material-icons right">more_vert</i>Arroz soltinho</span>
-                        <p><a href="#">Confira</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card
-                            Title</span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card borda">
-                    <div class="card-image waves-effect waves-block waves-light borda height-card-img">
-                        <img class="activator img-receita" src="app/resources/img/hamburguer.jpg">
-                    </div>
-                    <div class="card-content height-card-product">
-                        <span class="card-title activator grey-text text-darken-4 text-hide"><i
-                                class="material-icons right">more_vert</i>Hamburguer artezanal</span>
-                        <p><a href="#">Confira</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card
-                            Title</span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <!--  paralax effect -->
-    <div class="parallax-container" style="height: 400px">
-        <div class="parallax"><img src="app/resources/img/cafe.jpg"></div>
-    </div>
-
-    <div class="section white">
-        <div class="row  black-text text-darken-3 lighten-3 center">
-            <H2>Suas receitas reconhecidas mundialmente</H2>
-        </div>
-    </div>
-
-    <!--  text -->
-    <div class="section black">
-        <div class="row  white-text text-darken-3 lighten-3 center valign-wrapper">
-            <div class="col s12 l6 m12">
-                <h2>Compartilhe seus dotes culinarios</h2>
-                <p class="white-text text-darken-3 lighten-3">
-                    No Caramelo você pode compartilhar sua receita com uma infinidade de mebros.
-                    Trocando receitas de forma intuitiva rapida </p>
-
-            </div>
-
-            <div class="col m6 l6 hide-on-med-and-down">
-
-                <img src="app/resources/img/caderno-receitas.jpg" class="borda" alt="Caderno de receitas" width="100%" height="400px">
-
-            </div>
-        </div>
-    </div>
-
-    <!--  float button -->
-    <div class="fixed-action-btn">
-
-        <a class="btn-floating btn-large red">
-            <i class="large material-icons">mode_edit</i>
-        </a>
-        <ul>
-            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-        </ul>
-    </div>
-    
-    <div class="row">
-    	
-    	<div class="col s12 m6 l6">
-    	<h3 class="white-text center">Cadastre-se</h3>
-    	<jsp:include page="app/components/form_register.jsp"></jsp:include>
-    	</div>
-    	<div class="col s12 m6 l6">
-    	<h3 class="white-text center">Entre</h3>
-    	<jsp:include page="app/components/form_login.jsp"></jsp:include>
-    	</div>
-    </div>
-    
-    
-    <!-- Footer -->>
-    <jsp:include page="app/components/footer.jsp"></jsp:include>

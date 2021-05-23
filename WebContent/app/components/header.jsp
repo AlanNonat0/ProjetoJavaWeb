@@ -7,34 +7,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Caramelo</title>
-    <link rel="stylesheet" href="app/resources/materialize/css/materialize.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="app/resources/materialize/css/style.css">
+    <title>Sabores</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script src="app/resources/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="app/resources/bootstrap/css/bootstrap.css">
     <link rel="shortcut icon" href="app/resources/img/favicon.ico" type="image/x-icon">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	
 </head>
+<style>
+*{
+	font-family: 'Poppins', sans-serif !important;
+}
+</style>
+<body class="bg bg-dark" style="padding-bottom: 4rem">
 
-<body class="black">
-
-    <!--  navbar -->
-    <nav class="nav-wrapper black">
-
-        <a href="index.jsp" class="brand-logo valign-wrapper">
-            <i class="large material-icons"><img src="app/resources/img/sugar.png" height="45px"
-                    alt="Galeria de fotos"></i>Caramelo!
+    <nav class="navbar navbar-expand navbar-light bg-light ">
+      <div class="container-fluid">
+        <a href="index.jsp" class="navbar-brand d-flex">
+            <img src="app/resources/img/chef.svg" width="45" height="45" />
+            <span class="h3 px-2 pt-2">Sabores</span>
         </a>
 
-        <ul class="right hide-on-med-and-down">
-            <li><a href="register.jsp">Cadastro</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-
-        <form class="right hide-on-med-and-down">
-            <input id="search" type="search" placeholder="Pesquise aqui" required>
-        </form>
-
-        <ul class="right hide-on-med-and-up">
-            <li><a href="register.jsp">Cadastro</a></li>
-        </ul>
-    </nav>
+        
+	      
+        <div class="d-flex">
+        
+	      <ul class="d-flex justify-content-end navbar-nav me-auto">
+		    <li class="nav-item">
+		       <a class="nav-link" href="register.jsp">Cadastro</a>
+		        	
+		     </li>
+		     <li class="nav-item">
+		       <a class="nav-link" href="#">Login</a>
+		      </li>
+		        
+		 </ul>
+		
+			
+	      
+	    </div>
+	   </div>
+	</nav>
