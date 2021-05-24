@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-   
-    <!-- footer -->
+    pageEncoding="UTF-8" errorPage="error.jsp"%>
+    
+  <% String context = request.getContextPath(); %>
+ 
+ <!-- footer -->
 		<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" style="height: 40vh !important; overflow-y: hidden">
 			  <div class="offcanvas-header">
 			    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Colaboradores</h5>
@@ -14,13 +16,13 @@
 			  			<ul class="list-group list-group-flush">
 	
 					 	<li class="list-group-item py-1">
-					        <img src="app/resources/img/github.png" alt="Github do Alan" class="circle">
+					        <img src="<%= context+"/app/resources/img/github.png" %>" alt="Github do Alan" class="circle">
 					           <span class="title">Alan Nonato</span>
 					              <p>Github: <a href="https://github.com/AlanNonat0">https://github.com/AlanNonat0</a></p>
 					    </li>
 					    
 					    <li class="list-group-item py-1">
-							<img src="app/resources/img/github.png" alt="Github do Julio" class="circle">
+							<img src="<%= context+"/app/resources/img/github.png" %>" alt="Github do Julio" class="circle">
 					             <span class="title">Julio Cesar Gois dos Santos</span>
 					           <p>Github: <a href="https://github.com/jucesargois">https://github.com/jucesargois</a></p>
 					     </li>
@@ -33,13 +35,13 @@
 			  			<ul class="list-group list-group-flush">
 	
 						 	 <li class="list-group-item py-1">
-						            <img src="app/resources/img/github.png" alt="Github da Ruth" class="circle">
+						            <img src="<%= context+"/app/resources/img/github.png" %>" alt="Github da Ruth" class="circle">
 						               <span class="title">Ruth Danielle Moreira</span>
 						                 <p>Github: <a href="https://github.com/ruthdanielle">https://github.com/ruthdanielle</a></p>
 						       </li>
 				
 								<li class="list-group-item py-1">
-						             <img src="app/resources/img/github.png" alt="Github do Danilo" class="circle">
+						             <img src="<%= context+"/app/resources/img/github.png" %>" alt="Github do Danilo" class="circle">
 						                <span class="title">Danilo Antonio Rêgo</span>
 						                 <p>Github: <a href="https://github.com/Danilo2589">https://github.com/Danilo2589</a></p>
 						      </li> 

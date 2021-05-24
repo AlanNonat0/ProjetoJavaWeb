@@ -1,13 +1,34 @@
 package model;
 
 public class UserBean {
-	
+	private int id;
 	private String nome;
 	private String email;
 	private String telefone;
 	private String senha;
+	private String dataCadastro;
+	private String dataUp;
 	private int tipo;
 	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDataCadastro() {
+		return dataCadastro;
+	}
+	public void setDataCadastro(String dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+	public String getDataUp() {
+		return dataUp;
+	}
+	public void setDataUp(String dataUp) {
+		this.dataUp = dataUp;
+	}
 	public int getTipo() {
 		return tipo;
 	}
