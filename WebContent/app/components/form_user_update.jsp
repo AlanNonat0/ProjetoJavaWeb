@@ -4,9 +4,8 @@
 
 
 <!-- Fomulário de atualização cadastral -->
-<div class="row mx-auto d-flex justify-content-center mt-4">
 
-    <div class="col-lg-4 col-12 col-sm-6 col-xl-4">
+    <div class="col-lg-10 col-12 col-sm-10 col-xl-10">
     
     	<h3 class="text-white text-center">Atualizar</h3>
 
@@ -20,13 +19,11 @@
             <label for="nsenha" class="text-white h5 mt-2">Nova Senha:</label>
             <input type="password" name="nsenha" id="nsenha" class="form-control" placeholder="Digite sua nova senha" maxlength="255" required>
             
-            <label for="nsenha2" class="text-white h5 mt-2">Nova Senha:</label>
-            <input type="password" name="nsenha2" id="nsenha2" class="form-control" placeholder="Repita sua nova senha" maxlength="255" required>
+            <input type="password" name="nsenha2" id="nsenha2" class="form-control mt-4" placeholder="Repita sua nova senha" maxlength="255" required>
 
 			<div class="d-flex justify-content-center mt-4">
-				<button type="submit" name="acao" value="update" class="btn btn-lg btn-primary">Entrar</button>
+				<button type="submit" name="acao" value="update" class="btn btn-lg btn-warning">atualizar</button>
 			</div>
          
         </form>
     </div>
-</div>

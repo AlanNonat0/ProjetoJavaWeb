@@ -8,7 +8,7 @@ public class UserBean {
 	private String senha;
 	private String dataCadastro;
 	private String dataUp;
-	private int tipo;
+	private int situacao;
 	
 	
 	public int getId() {
@@ -29,11 +29,11 @@ public class UserBean {
 	public void setDataUp(String dataUp) {
 		this.dataUp = dataUp;
 	}
-	public int getTipo() {
-		return tipo;
+	public int getSituacao() {
+		return situacao;
 	}
-	public void setTipo(int tipo) {
-		this.tipo = tipo;
+	public void setSituacao(int situacao) {
+		this.situacao = situacao;
 	}
 	public String getNome() {
 		return nome;

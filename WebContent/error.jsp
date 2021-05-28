@@ -2,7 +2,7 @@
 <!-- Header -->
 <jsp:include page="app/components/header.jsp"></jsp:include>
 
-
+<div class="container-fluid">
 <div class="row d-flex justify-content-center mt-4">	
 <h1 class="text-white text-center">404 Oops pagina nao encontrada</h1>
 
@@ -21,5 +21,6 @@
 		
 		</div>
 	</div>
+</div>
 <!-- Footer -->
 <jsp:include page="app/components/footer.jsp"></jsp:include>

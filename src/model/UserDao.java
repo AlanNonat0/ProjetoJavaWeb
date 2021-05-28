@@ -11,13 +11,12 @@ public class UserDao {
 		String sql = null;
 		try {
 			conn = ConnectionFactory.getConnection();
-			sql = "INSERT INTO user (nome, telefone, email, senha, tipo) VALUES(?,?,?,?,?)";
+			sql = "INSERT INTO `usuario`( `nome`, `telefone`, `email`, `senha`) VALUES(?,?,?,?)";
 			stmt = conn.prepareStatement(sql);
 			stmt.setString(1, user.getNome());
 			stmt.setString(2, user.getTelefone());
 			stmt.setString(3, user.getEmail());
 			stmt.setString(4, user.getSenha());
-			stmt.setInt(5, user.getTipo());
 			stmt.execute();
 			
 		} catch (Exception e) {
@@ -36,7 +35,7 @@ public class UserDao {
 		String sql = null;
 		try {
 			conn = ConnectionFactory.getConnection();
-			sql = "UPDATE user SET  telefone = ?, senha = ? WHERE id = ?";
+			sql = "UPDATE usuario SET  telefone = ?, senha = ? WHERE id = ?";
 			stmt = conn.prepareStatement(sql);
 			stmt.setString(1, user.getTelefone());
 			stmt.setString(2, user.getSenha());
@@ -58,15 +57,15 @@ public class UserDao {
 		String email = null;
 		String senha = null;
 		String telefone = null;
-		String dtCad = null;
-		String dtAtt = null;
-		int tipo = 0;
+		String data_cadastro = null;
+		String data_atualizacao = null;
+		int situacao = 0;
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		String sql = null;
 		try {
 			conn = ConnectionFactory.getConnection();
-			sql = "SELECT * FROM user WHERE  email = ? AND senha = ?";
+			sql = "SELECT * FROM usuario WHERE  email = ? AND senha = ?";
 			stmt = conn.prepareStatement(sql);
 			stmt.setString(1, user.getEmail());
 			stmt.setString(2, user.getSenha());
@@ -80,9 +79,9 @@ public class UserDao {
 				email = result.getString("email");
 				senha = result.getString("senha");
 				telefone = result.getString("telefone");
-				tipo = result.getInt("tipo");
-				dtCad = result.getString("dtCadastro");
-				dtAtt = result.getString("dtAtt");
+				situacao = result.getInt("situacao");
+				data_cadastro = result.getString("data_cadastro");
+				data_atualizacao = result.getString("data_atualizacao");
 
 			}
 			
@@ -92,9 +91,9 @@ public class UserDao {
 				user.setEmail(email);
 				user.setSenha(senha);
 				user.setTelefone(telefone);
-				user.setTipo(tipo);
-				user.setDataCadastro(dtCad);
-				user.setDataUp(dtAtt);
+				user.setSituacao(situacao);
+				user.setDataCadastro(data_cadastro);
+				user.setDataUp(data_atualizacao);
 				
 				
 				return true;
@@ -122,7 +121,7 @@ public class UserDao {
 		
 		try {
 			conn = ConnectionFactory.getConnection();
-			sql = "SELECT email FROM user WHERE  email = ?";
+			sql = "SELECT email FROM usuario WHERE  email = ?";
 			stmt = conn.prepareStatement(sql);
 			stmt.setString(1, email);
 			ResultSet result = stmt.executeQuery();

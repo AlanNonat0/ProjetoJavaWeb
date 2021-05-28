@@ -47,15 +47,15 @@ public class UserServlet extends HttpServlet {
 				user.setEmail(request.getParameter("email"));
 				user.setTelefone(request.getParameter("telefone"));
 				user.setSenha(request.getParameter("senha"));
-				user.setTipo(1);
+
 				if (user.getTelefone() !=null && user.getTelefone().matches("^[0-9]+$")) {
 					boolean valida = UserDao.validaEmail(user.getEmail());
-					System.out.println(valida);
+					
 					if(valida) {
 						
 						UserDao.register(user);
-	
-						response.sendRedirect("index.jsp?situacao=registersucesso");
+							
+							response.sendRedirect("register.jsp?situacao=sucessoregister");
 					} else {
 						
 						response.sendRedirect("register.jsp?situacao=erroemail");
@@ -78,8 +78,7 @@ public class UserServlet extends HttpServlet {
 				user.setEmail(request.getParameter("email"));
 				user.setSenha(request.getParameter("senha"));
 				if(UserDao.login(user)) {
-					HttpSession session = request.getSession();
-					session.setAttribute("login", session);			
+					HttpSession session = request.getSession();		
 					session.setAttribute("user", user);
 			
 					response.sendRedirect("usuario/caderno.jsp?situacao=sucesso");
@@ -113,8 +112,8 @@ public class UserServlet extends HttpServlet {
 							int id = user.getId();
 							
 							user.setTelefone(request.getParameter("telefone"));
-							user.setSenha(request.getParameter("senha"));
-							user.setTipo(1);
+							user.setSenha(request.getParameter("nsenha"));
+							user.setSituacao(1);
 							
 		
 							UserDao.update(id, user);

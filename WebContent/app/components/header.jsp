@@ -48,6 +48,10 @@
 		      	
 		     </li>
 		     <%} else { %>
+		     <li class="nav-item">
+		       <a class="nav-link" href="<%= context+"/usuario/caderno.jsp" %>">caderno</a>
+		      	
+		     </li>
 		    <li class="nav-item">
 		       <a class="nav-link" href="<%= context+"/SessionServlet?logout=yes" %>">Sair</a>
 		      	

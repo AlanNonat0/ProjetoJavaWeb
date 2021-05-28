@@ -10,6 +10,9 @@
 	}
 	
 %>
+
+<div class="row mt-4">
+   <div class="col-12 mx-autod-flex  justify-content-center ">
 <!-- Register/Login -->
     <%
 	String situacao = request.getParameter("situacao");
@@ -87,6 +90,15 @@
 		</div>
 	</div>
 
-  <% } %>
+  <% }
+  if(request.getParameter("situacao") != null && request.getParameter("situacao").equals("sucessoregister")){ %>
+  <div class="row justify-content-center">
+	<div class="col-6 ">
+		<h4 class="text-white text-center ">Cadastrado com sucesso</h4>
+	</div>
+</div>
+
+<% } %>
   
-   		
+   	</div>
+   	</div>	
