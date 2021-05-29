@@ -24,23 +24,27 @@
 		<!-- ------------------------------------------------- -->
 	</div>
 	<div class="row mt-4">
-	   <div class="col-6 mx-autod-flex  justify-content-center ">
+	   <div class="col-12 col-xl-7 col-lg-7 mx-auto d-flex justify-content-center">
 	  
-	    	<h3 class="white-text center">atualizar</h3>
+	    	
 	    	<jsp:include page="../app/components/form_user_update.jsp"></jsp:include>
 	    	
 	   </div>
 	    
-	    <div class="col-6 mx-autod-flex  justify-content-center mt-4">
-	    	<div class="card bg-dark mt-2 border-light">
-	    		<div class="card-header border-light"><h3 class="text-white text-center">Dados pessoais</h3></div>
-	    		<div class="card-body text-white mb-3">
-	    			<p>Nome: <strong><%= nome %> </strong> </p>
-	    			<p>Email: <strong><%= email %> </strong></p>
-	    			<p>Telefone: <strong><%= telefone %> </strong></p>
-	    			<p>ultima atualização: <strong><%= up.substring(0, 10) %> </strong></p>
-	    			<p><small>Mantenha seus dados sempre atualizados*</small></p>
-	    			<br><br>
+	    <div class="col-12 col-lg-5 col-xl-5 mx-auto">
+	    	<div class="card bg-dark border-transparent">
+	    		<div class="card-header p-0"><h3 class="card-title text-white text-center">Dados pessoais</h3></div>
+	    		<div class="card-body pb-0 pt-4 px-0 text-white">
+	    		
+	    			<ul class="list-group list-group-flush">
+	    				<li class="list-group-item list-group-item-secondary pe-0"><span class='fw-bold'>Nome:</span> <%= nome %> </li>
+	    				<li class="list-group-item list-group-item-secondary pe-0"><span class='fw-bold'>E-mail:</span> <%= email %> </li>
+	    				<li class="list-group-item list-group-item-secondary pe-0"><span class='fw-bold'>Telefone:</span> <%= telefone %></li>
+	    				<li class="list-group-item list-group-item-secondary pe-0"><span class="fw-bold">Última Atualização:</span> <%= up.substring(0, 10) %></li>
+	    				<li class="list-group-item list-group-item-secondary pe-0"><span class="fw-bold"><small>Mantenha seus dados sempre atualizados*</small></li>
+	    			</ul>
+	    			
+	    			
 	    		</div>
 	    	</div>
 	    </div>

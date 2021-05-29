@@ -23,22 +23,24 @@ ReceitaBean receita = (ReceitaBean) session.getAttribute("receita");
 <!-- Header -->
 <jsp:include page="app/components/header.jsp"></jsp:include>
 
+
+
 <div class="container-fluid">
 
- <div class="row mt-4 mx-autod-flex  justify-content-center">
-    <div class="col-6  mt-4">
-    	<div class="card bg-dark mt-2 border-light">
+ <div class="row mx-autod-flex  justify-content-center">
+    <div class="col-lg-6 col-xl-6 col-sm-8 col-12  mt-4">
+    	<div class="card  bg bg-light mt-2">
     	
-    		<div class="card-header border-light">
-    			<div class="row"><small class="text-white"> Enviado por: <%= receita.getCriador() %></small></div>
-    		<h3 class="text-white text-center"><%= receita.getNome() %></h3>
-    		<h5 class="text-white text-center"><%= receita.getDescricao() %></h5>
+    		<div class="card-header ">
+	    		<h3 class="text-dark text-center"><%= receita.getNome() %></h3>
+	    		<h5 class="text-dark text-center"><%= receita.getDescricao() %></h5>
+	    		<div class="d-flex justify-content-end"><small class="text-dark"> Enviado por: <%= receita.getCriador() %></small></div>
     		</div>
-    		<div class="card-body text-white mb-4">
-    			<h3 class="text-white mt-4">Ingredientes</h3>
-    			<p><strong><ul><li><%= receita.getIngredientes().replace("\n", "</li><br><li>") %></ul></strong>  </p>
-    			<h3 class="text-white mt-5">Preparo</h3>
-    			<p><strong><ol><li><%= receita.getPreparo().replace("\n", "</li><br><li>") %></ol> </strong></p>
+    		<div class="card-body mb-4">
+    			<h3 class=" mt-4">Ingredientes</h3>
+    				<ul><li class="fw-bold"><%= receita.getIngredientes().replace("\n", "</li><br><li>") %></ul> 
+    			<h3 class=" mt-4">Preparo</h3>
+    				<ol><li  class="fw-bold"><%= receita.getPreparo().replace("\n", "</li><br><li>") %></ol>
     			
     			
     		</div>

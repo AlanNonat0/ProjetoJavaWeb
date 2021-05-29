@@ -39,14 +39,14 @@
 		<div class=" col-lg-8 col-12 col-sm-12 col-xl-8">
 			<h4 class="text-white text-center">Encontre aqui suas receitas salvas</h4>
 			<form class="form-control" action="<%= context+"/usuario/caderno.jsp" %>" method="get">
-			<div class="form-group d-flex">
-				<div class="col-md-9">
+			<div class="row">
+				<div class="col-lg-9 col-xl-9 col-sm-8 col-12">
 					<input type="text" class="form-control mx-auto" placeholder="Digite aqui sua busca" name="buscar"/>
 					</div>
 					
-					<div class="col-md-3 ">
-						<select name="categoria" id="categoria" class="form-control">
-							<option value="">todos</option>
+					<div class="col-lg-3 col-xl-3 col-sm-4 col-12">
+						<select name="categoria" id="categoria" class="form-select">
+							<option value="">Todos</option>
 							<option value="refeicao">Refeição</option>
 							<option value="salada">Salada</option>
 							<option value="confeitaria">Confeitaria</option>
@@ -69,10 +69,12 @@ if(buscaReceita == null){
 		
 		
 		<div class="col-lg-3 col-sm-6 pb-2">
-			<div class="card border border-dark" style="height: 367.84px !important;">
-			  <img src="<%= context+"/app/resources/img/chef.svg" %>" class="card-img-top" alt="Bolo trufado" style="min-height: 206.84px !important">
+			<div class="card bg bg-light">
+			 <div class="card-header ">
+			 	 <h5 class="card-title"><%= receita.get(i).getNome()%></h5>
+			 </div>
 			  <div class="card-body">
-			    <h5 class="card-title"><%= receita.get(i).getNome()%></h5>
+			   
 			    <p class="card-text"><%= receita.get(i).getDescricao() %></p>
 			    <div class="d-flex justify-content-end">
 			    <a href="<%= context+"/preparo.jsp?show="+receita.get(i).getId() %>" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</a>
@@ -99,10 +101,12 @@ if(buscaReceita == null){
 	if(buscaReceita.size() > 0){
 	for(int i=0; i < buscaReceita.size(); i++){%>
 		<div class="col-lg-3 col-sm-6 pb-2">
-			<div class="card border border-dark" style="height: 367.84px !important;">
-			  <img src="<%= context+"/app/resources/img/chef.svg" %>" class="card-img-top" alt="Bolo trufado" style="min-height: 206.84px !important">
+			<div class="card bg bg-light">
+			<div class="card-header ">
+			 	 <h5 class="card-title"><%= buscaReceita.get(i).getNome()%></h5>
+			 </div>
 			  <div class="card-body">
-			    <h5 class="card-title"><%= buscaReceita.get(i).getNome()%></h5>
+			   
 			    <p class="card-text"><%= buscaReceita.get(i).getDescricao() %></p>
 			    <div class="d-flex justify-content-end">
 			    	<a href="<%= context+"/preparo.jsp?show="+receita.get(i).getId() %>" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</a>

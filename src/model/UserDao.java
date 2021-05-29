@@ -65,7 +65,7 @@ public class UserDao {
 		String sql = null;
 		try {
 			conn = ConnectionFactory.getConnection();
-			sql = "SELECT * FROM usuario WHERE  email = ? AND senha = ?";
+			sql = "SELECT id, nome, telefone, email, senha, DATE_FORMAT(data_cadastro, '%d/%m/%Y') AS 'data_cadastro', DATE_FORMAT(data_atualizacao, '%d/%m/%Y') AS 'data_atualizacao', situacao FROM usuario WHERE  email = ? AND senha = ?";
 			stmt = conn.prepareStatement(sql);
 			stmt.setString(1, user.getEmail());
 			stmt.setString(2, user.getSenha());

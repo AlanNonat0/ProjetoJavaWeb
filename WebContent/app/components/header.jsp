@@ -27,7 +27,7 @@
 	font-family: 'Poppins', sans-serif !important;
 }
 </style>
-<body class="bg bg-dark" style="padding-bottom: 4rem">
+<body class="bg bg-dark" style="padding-bottom: 6rem">
 
     <nav class="navbar navbar-expand navbar-light bg-light ">
       <div class="container-fluid">
@@ -40,7 +40,7 @@
 	      
         <div class="d-flex">
         
-	      <ul class="d-flex justify-content-end navbar-nav me-auto">
+	      <ul class=" navbar-nav me-auto">
 	      
 	      <% if(user == null){ %>
 		    <li class="nav-item">
@@ -49,7 +49,7 @@
 		     </li>
 		     <%} else { %>
 		     <li class="nav-item">
-		       <a class="nav-link" href="<%= context+"/usuario/caderno.jsp" %>">caderno</a>
+		       <a class="nav-link" href="<%= context+"/usuario/caderno.jsp" %>">Caderno</a>
 		      	
 		     </li>
 		    <li class="nav-item">
