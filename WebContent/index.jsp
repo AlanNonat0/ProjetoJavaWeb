@@ -64,7 +64,7 @@
 			    <h5 class="card-title">Bolo Trufado</h5>
 			    <p class="card-text">Bolo delicioso de chocolate trufado decorado com cerejas.</p>
 			    <div class="d-flex justify-content-end">
-			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    	<a href="preparo.jsp?show=4" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</a>
 			    </div>
 			    
 			  </div>
@@ -78,7 +78,7 @@
 			    <h5 class="card-title">Pizza</h5>
 			    <p class="card-text">Que tal surpreender com uma pizza caseira e cheia de sabor?!</p>
 			    <div class="d-flex justify-content-end">
-			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    	<a href="preparo.jsp?show=5" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</a>
 			    </div>
 			    
 			  </div>
@@ -91,10 +91,10 @@
 			<div class="card border border-dark" style="height: 367.84px !important;">
 			  <img src="<%= context+"/app/resources/img/sopa.jpg" %>" class="card-img-top" alt="Sopa de Lentilha" style="min-height: 206.84px !important">
 			  <div class="card-body">
-			    <h5 class="card-title">Sopa de Lentilha</h5>
+			    <h5 class="card-title">Sopa de lentilha</h5>
 			    <p class="card-text">Sopa de lentilha repleta de temperos e sabores diferenciados.</p>
 			    <div class="d-flex justify-content-end">
-			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    	<a href="preparo.jsp?show=6" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</a>
 			    </div>
 			    
 			  </div>
@@ -110,7 +110,7 @@
 			    <h5 class="card-title">Milkshake de Morango</h5>
 			    <p class="card-text">Colorido e delicioso. Perfeito para as crianças.</p>
 			    <div class="d-flex justify-content-end">
-			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    	<a href="preparo.jsp?show=7" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</a>
 			    </div>
 			    
 			  </div>
@@ -126,7 +126,7 @@
 			    <h5 class="card-title">Arroz Soltinho</h5>
 			    <p class="card-text">Receita infálivel para que seu arroz sempre fique bem soltinho.</p>
 			    <div class="d-flex justify-content-end">
-			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    	<a href="preparo.jsp?show=8" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</a>
 			    </div>
 			    
 			  </div>
@@ -140,7 +140,7 @@
 			    <h5 class="card-title">Hambúrguer Artesanal</h5>
 			    <p class="card-text">Receita clássica capaz de conquistar todos os paladares.</p>
 			    <div class="d-flex justify-content-end">
-			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    	<a href="preparo.jsp?show=9" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</a>
 			    </div>
 			    
 			  </div>
@@ -154,7 +154,7 @@
 			    <h5 class="card-title">Torta de Maçã</h5>
 			    <p class="card-text">Receita queridinha. Ideal para dias mais frios.</p>
 			    <div class="d-flex justify-content-end">
-			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    	<a href="preparo.jsp?show=10" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</a>
 			    </div>
 			    
 			  </div>
@@ -168,7 +168,7 @@
 			    <h5 class="card-title">Café Colombiano</h5>
 			    <p class="card-text">Café diferenciado de sabor intenso.</p>
 			    <div class="d-flex justify-content-end">
-			    	<button type="button" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</button>
+			    	<a href="preparo.jsp?show=11" class="btn-block btn btn-outline-dark btn-sm">Confira aqui</a>
 			    </div>
 			    
 			  </div>

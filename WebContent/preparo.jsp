@@ -38,9 +38,9 @@ ReceitaBean receita = (ReceitaBean) session.getAttribute("receita");
     		</div>
     		<div class="card-body mb-4">
     			<h3 class=" mt-4">Ingredientes</h3>
-    				<ul><li class="fw-bold"><%= receita.getIngredientes().replace("\n", "</li><br><li>") %></ul> 
+    				<ul><li><%= receita.getIngredientes().replace("\n", "</li><br><li>") %></ul> 
     			<h3 class=" mt-4">Preparo</h3>
-    				<ol><li  class="fw-bold"><%= receita.getPreparo().replace("\n", "</li><br><li>") %></ol>
+    				<ol><li><%= receita.getPreparo().replace("\n", "</li><br><li>") %></ol>
     			
     			
     		</div>
